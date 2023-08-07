@@ -1,0 +1,31 @@
+{
+	"$schema": "./node_modules/rome/configuration_schema.json",
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"ignore": ["node_modules"],
+		"indentSize": 2,
+		"indentStyle": "tab",
+		"lineWidth": 80
+	},
+	"javascript": {
+		"formatter": {
+			"quoteProperties": "asNeeded",
+			"quoteStyle": "single",
+			"semicolons": "asNeeded",
+			"trailingComma": "none"
+		},
+		"globals": []
+	},
+	"linter": {
+		"enabled": true,
+		"ignore": ["node_modules"],
+		"rules": {
+			"all": true
+		}
+	},
+	"organizeImports": {
+		"enabled": false,
+		"ignore": ["node_modules"]
+	}
+}

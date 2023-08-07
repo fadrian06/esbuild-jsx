@@ -1,0 +1,21 @@
+{
+	"devDependencies": {
+		"esbuild": "^0.18.19",
+		"eslint": "^8.46.0",
+		"eslint-plugin-react": "^7.33.1",
+		"rome": "^12.1.3",
+		"stylelint": "^15.10.2",
+		"stylelint-config-standard": "^34.0.0",
+		"typescript": "^5.1.6"
+	},
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"scripts": {
+		"dev": "node esbuild.mjs",
+		"build": "node build.mjs",
+		"lint": "eslint ./src/* && stylelint \"src/**/*.css\"",
+		"lint:fix": "eslint ./src/* --fix && stylelint \"src/**/*.css\" --fix"
+	}
+}
