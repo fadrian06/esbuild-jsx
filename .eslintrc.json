@@ -34,12 +34,19 @@
 		"no-shadow": "warn",
 		"object-property-newline": "off",
 		"dot-location": "off",
-		"linebreak-style": "off"
+		"linebreak-style": "off",
+		"newline-per-chained-call": "off",
+		"max-statements": ["warn", 20],
+		"function-call-argument-newline": "off"
 	},
 	"settings": {
 		"react": {
 			"version": "detect"
 		}
 	},
-	"ignorePatterns": ["src/**/*.css"]
+	"ignorePatterns": ["src/**/*.css"],
+	"plugins": ["react"],
+	"globals": {
+		"isDevelopment": "readonly"
+	}
 }

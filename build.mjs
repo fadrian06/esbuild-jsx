@@ -11,7 +11,10 @@ esbuild
 			'.svg': 'dataurl'
 		},
 		minify: true,
-		target: 'es2018'
+		target: 'es2018',
+		define: {
+			isDevelopment: 'false'
+		}
 	})
 	.then(() => {
 		console.info('Compiled successfully')

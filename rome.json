@@ -3,7 +3,9 @@
 	"formatter": {
 		"enabled": true,
 		"formatWithErrors": false,
-		"ignore": ["node_modules"],
+		"ignore": [
+			"node_modules"
+		],
 		"indentSize": 2,
 		"indentStyle": "tab",
 		"lineWidth": 80
@@ -15,17 +17,30 @@
 			"semicolons": "asNeeded",
 			"trailingComma": "none"
 		},
-		"globals": []
+		"globals": [
+			"isDevelopment",
+			"LiveReloadChangeEvent"
+		]
 	},
 	"linter": {
 		"enabled": true,
-		"ignore": ["node_modules"],
+		"ignore": [
+			"node_modules"
+		],
 		"rules": {
-			"all": true
+			"all": true,
+			"nursery": {
+				"all": true
+			},
+			"complexity": {
+				"useOptionalChain": "off"
+			}
 		}
 	},
 	"organizeImports": {
 		"enabled": false,
-		"ignore": ["node_modules"]
+		"ignore": [
+			"node_modules"
+		]
 	}
 }

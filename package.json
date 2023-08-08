@@ -13,7 +13,7 @@
 		"react-dom": "^18.2.0"
 	},
 	"scripts": {
-		"dev": "node esbuild.mjs",
+		"dev": "node dev.mjs",
 		"build": "node build.mjs",
 		"lint": "eslint ./src/* && stylelint \"src/**/*.css\"",
 		"lint:fix": "eslint ./src/* --fix && stylelint \"src/**/*.css\" --fix"

@@ -8,10 +8,15 @@ const context = await esbuild.context({
 	bundle: true,
 	loader: {
 		'.svg': 'dataurl'
-	}
+	},
+	define: {
+		isDevelopment: 'true'
+	},
+	sourcemap: 'external'
 })
 
 await context.watch()
+console.info('Compiled successfully...')
 console.info('Watching files...')
 
 const { port } = await context.serve({
@@ -19,3 +24,4 @@ const { port } = await context.serve({
 })
 
 console.info(`Dev server on http://localhost:${port}`)
+console.info('Live reload enabled + Hot CSS reload!!!')
