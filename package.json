@@ -1,5 +1,7 @@
 {
 	"devDependencies": {
+		"@types/react": "^18.2.20",
+		"@types/react-dom": "^18.2.7",
 		"esbuild": "^0.18.19",
 		"eslint": "^8.46.0",
 		"eslint-plugin-react": "^7.33.1",
@@ -13,8 +15,8 @@
 		"react-dom": "^18.2.0"
 	},
 	"scripts": {
-		"dev": "node dev.mjs",
-		"build": "node build.mjs",
+		"dev": "node esbuild.dev.mjs",
+		"build": "node esbuild.prod.mjs",
 		"lint": "eslint ./src/* && stylelint \"src/**/*.css\"",
 		"lint:fix": "eslint ./src/* --fix && stylelint \"src/**/*.css\" --fix"
 	}

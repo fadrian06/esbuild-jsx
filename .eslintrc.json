@@ -37,7 +37,8 @@
 		"linebreak-style": "off",
 		"newline-per-chained-call": "off",
 		"max-statements": ["warn", 20],
-		"function-call-argument-newline": "off"
+		"function-call-argument-newline": "off",
+		"react/prop-types": "off"
 	},
 	"settings": {
 		"react": {
