@@ -1,53 +1,45 @@
 {
-	"env": {
-		"browser": true
-	},
+	"env": { "browser": true },
 	"extends": ["eslint:all", "plugin:react/all", "plugin:react/jsx-runtime"],
-	"parserOptions": {
-		"sourceType": "module",
-		"ecmaVersion": 13
-	},
+	"parserOptions": { "sourceType": "module", "ecmaVersion": 2015 },
 	"rules": {
-		"quotes": ["warn", "single"],
-		"semi": "off",
-		"no-tabs": "off",
-		"indent": ["warn", "tab"],
-		"quote-props": "off",
-		"sort-keys": "off",
-		"no-console": "warn",
-		"one-var": "off",
-		"object-curly-spacing": "off",
-		"sort-imports": "off",
-		"padded-blocks": "off",
-		"space-before-function-paren": "off",
-		"react/jsx-one-expression-per-line": "off",
-		"react/jsx-no-literals": "off",
-		"array-element-newline": "off",
-		"func-style": "off",
+		/*==============================
+		=            ESLINT            =
+		==============================*/
+		"array-element-newline": ["warn", "consistent"],
+		"capitalized-comments": "off",
+		"consistent-return": ["warn", { "treatUndefinedAsUnspecified": false }],
+		"func-style": ["warn", "declaration", { "allowArrowFunctions": true }],
+		"function-call-argument-newline": ["warn", "consistent"],
+		"indent": ["warn", "tab", { "SwitchCase": 1 }],
+		"jsx-quotes": ["warn", "prefer-single"],
+		"max-len": ["warn", { "code": 80, "tabWidth": 2 }],
+		"max-statements": ["warn", 15, { "ignoreTopLevelFunctions": true }],
+		"multiline-comment-style": ["off", "bare-block"],
+		"newline-per-chained-call": ["off", { "ignoreChainWithDepth": 3 }],
 		"no-magic-numbers": "off",
-		"react/jsx-indent": ["warn", "tab"],
-		"react/jsx-max-props-per-line": "off",
-		"react/jsx-max-depth": "off",
-		"max-len": ["warn", 85],
-		"jsx-quotes": "off",
-		"react/jsx-no-bind": "off",
-		"no-shadow": "warn",
-		"object-property-newline": "off",
-		"dot-location": "off",
-		"linebreak-style": "off",
-		"newline-per-chained-call": "off",
-		"max-statements": ["warn", 20],
-		"function-call-argument-newline": "off",
-		"react/prop-types": "off"
+		"no-tabs": ["off", { "allowIndentationTabs": true }],
+		"object-curly-spacing": ["warn", "always"],
+		"one-var": "off",
+		"padded-blocks": ["warn", "never"],
+		"quotes": ["warn", "single", { "avoidEscape": true }],
+		"semi": ["warn", "never"],
+		"sort-imports": "off",
+		"space-before-function-paren": ["warn", "never"],
+		/*=============================
+		=            REACT            =
+		=============================*/
+		"react/jsx-indent": ["warn", "tab", { "checkAttributes": true, "indentLogicalExpressions": true }],
+		"react/jsx-indent-props": ["warn", { "indentMode": "tab", "ignoreTernaryOperator": true }],
+		"react/jsx-max-depth": ["warn", { "max": 3 }],
+		"react/jsx-max-props-per-line": ["warn", { "maximum": { "single": 4, "multi": 1 } }],
+		"react/jsx-newline": ["warn", { "prevent": true, "allowMultilines": false }],
+		"react/jsx-no-bind": ["warn", { "allowArrowFunctions": true, "allowFunctions": true }],
+		"react/jsx-no-literals": "off",
+		"react/jsx-one-expression-per-line": ["off", { "allow": "single-child" }]
 	},
-	"settings": {
-		"react": {
-			"version": "detect"
-		}
-	},
+	"settings": { "react": { "version": "detect" } },
 	"ignorePatterns": ["src/**/*.css"],
 	"plugins": ["react"],
-	"globals": {
-		"isDevelopment": "readonly"
-	}
+	"globals": { "isDevelopment": "readonly" }
 }

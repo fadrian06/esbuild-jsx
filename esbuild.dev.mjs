@@ -1,14 +1,8 @@
 import esbuild from 'esbuild'
+import { commonOptions } from './esbuild.config.mjs'
 
 const context = await esbuild.context({
-	entryPoints: ['src/index.jsx'],
-	format: 'esm',
-	jsx: 'automatic',
-	outfile: 'public/dist/bundle.js',
-	bundle: true,
-	loader: {
-		'.svg': 'dataurl'
-	},
+	...commonOptions,
 	define: {
 		isDevelopment: 'true'
 	},

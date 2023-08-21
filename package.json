@@ -19,5 +19,11 @@
 		"build": "node esbuild.prod.mjs",
 		"lint": "eslint ./src/* && stylelint \"src/**/*.css\"",
 		"lint:fix": "eslint ./src/* --fix && stylelint \"src/**/*.css\" --fix"
+	},
+	"stylelint": {
+		"extends": [
+			"stylelint-config-standard",
+			"stylelint-config-recommended"
+		]
 	}
 }

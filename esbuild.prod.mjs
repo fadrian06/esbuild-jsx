@@ -1,24 +1,12 @@
 import esbuild from 'esbuild'
+import { commonOptions } from './esbuild.config.mjs'
 
-esbuild
-	.build({
-		entryPoints: ['src/index.jsx'],
-		format: 'esm',
-		jsx: 'automatic',
-		outfile: 'public/dist/bundle.js',
-		bundle: true,
-		loader: {
-			'.svg': 'dataurl'
-		},
-		minify: true,
-		target: 'es2018',
-		define: {
-			isDevelopment: 'false'
-		}
-	})
-	.then(() => {
-		console.info('Compiled successfully')
-	})
-	.catch((error) => {
-		console.error(error)
-	})
+await esbuild.build({
+	...commonOptions,
+	minify: true,
+	define: {
+		isDevelopment: 'false'
+	}
+})
+
+console.info('Compiled successfully')
