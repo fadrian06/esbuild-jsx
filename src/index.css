@@ -332,7 +332,6 @@ input[type="range"]::-webkit-slider-runnable-track {
 	width: 100%;
 	height: 9.5px;
 	transition: .2s;
-	transition: .2s;
 	background: #161f27;
 	background: var(--background);
 	border-radius: 3px
@@ -357,7 +356,6 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 input[type="range"]::-moz-range-track {
 	width: 100%;
 	height: 9.5px;
-	transition: .2s;
 	transition: .2s;
 	background: #161f27;
 	background: var(--background);
@@ -616,13 +614,11 @@ dialog>header:first-child {
 
 dialog::backdrop {
 	background: rgb(0 0 0 / 61%);
-	backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px)
 }
 
 dialog::backdrop {
 	background: rgb(0 0 0 / 61%);
-	backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px)
 }
 
