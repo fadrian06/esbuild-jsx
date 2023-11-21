@@ -7,7 +7,7 @@ import './utils/livereload'
 
 const $root = document.querySelector('#root')
 if (!$root) {
-	throw new Error('Root element not found')
+  throw new Error('Root element not found')
 }
 
 createRoot($root).render(<App />)

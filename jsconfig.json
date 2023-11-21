@@ -1,11 +1,11 @@
 {
-	"compilerOptions": {
-		"checkJs": true,
-		"strict": true,
-		"noImplicitAny": true,
-		"strictNullChecks": true,
-		"jsx": "preserve",
-		"resolveJsonModule": true
-	},
-	"include": ["globals.d.ts", "src/**/*"]
+  "compilerOptions": {
+    "checkJs": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "jsx": "preserve",
+    "resolveJsonModule": true
+  },
+  "include": ["globals.d.ts", "src/**/*"]
 }
