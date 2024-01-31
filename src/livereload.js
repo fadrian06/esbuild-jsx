@@ -14,7 +14,6 @@ if (isDevelopment) {
           if (next instanceof HTMLLinkElement && link.parentNode) {
             next.href = `${updated[0]}?${getRandomString()}`
             next.onload = () => link.remove()
-
             link.parentNode.insertBefore(next, link.nextSibling)
           }
 
