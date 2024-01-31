@@ -1,24 +1,25 @@
 {
   "devDependencies": {
     "@biomejs/biome": "^1.5.3",
-    "@types/react": "^18.2.38",
-    "@types/react-dom": "^18.2.16",
-    "esbuild": "^0.19.7",
-    "eslint": "^8.54.0",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "esbuild": "^0.19.12",
+    "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.33.2",
     "stylelint": "^15.11.0",
     "stylelint-config-standard": "^34.0.0",
-    "typescript": "^5.3.2"
+    "typescript": "^5.3.3"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "dev": "node esbuild.dev.mjs",
-    "build": "node esbuild.prod.mjs",
-    "lint": "eslint ./src/* && stylelint \"src/**/*.css\"",
-    "lint:fix": "eslint ./src/* --fix && stylelint \"src/**/*.css\" --fix"
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "lint": "eslint ./src/* & stylelint \"src/**/*.css\"",
+    "lint:fix": "eslint ./src/* --fix & stylelint \"src/**/*.css\" --fix",
+    "add:rome": "npm un -D @biomejs/biome & npm i -D rome"
   },
   "stylelint": {
     "extends": [

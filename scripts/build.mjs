@@ -1,5 +1,5 @@
 import esbuild from 'esbuild'
-import { commonOptions } from './esbuild.config.mjs'
+import { commonOptions } from './config.mjs'
 
 await esbuild.build({
   ...commonOptions,
