@@ -3,10 +3,10 @@ import { commonOptions } from './esbuild.config.mjs'
 
 await esbuild.build({
   ...commonOptions,
-  minify: true,
   define: {
     isDevelopment: 'false'
-  }
+  },
+  minify: true
 })
 
 console.info('Compiled successfully')

@@ -1,7 +1,7 @@
 {
   "env": { "browser": true },
   "extends": ["eslint:all", "plugin:react/all", "plugin:react/jsx-runtime"],
-  "parserOptions": { "sourceType": "module", "ecmaVersion": 2015 },
+  "parserOptions": { "sourceType": "module", "ecmaVersion": 2022 },
   "rules": {
     /*==============================
     =            ESLINT            =
@@ -17,6 +17,7 @@
     "max-statements": ["warn", 15, { "ignoreTopLevelFunctions": true }],
     "multiline-comment-style": ["off", "bare-block"],
     "newline-per-chained-call": ["off", { "ignoreChainWithDepth": 3 }],
+    "no-console": "warn",
     "no-magic-numbers": "off",
     "no-tabs": ["warn", { "allowIndentationTabs": false }],
     "object-curly-spacing": ["warn", "always"],
