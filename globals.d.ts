@@ -9,6 +9,7 @@ declare module '*.module.css' {
 }
 
 declare let isDevelopment: boolean
+
 declare interface LiveReloadChangeEvent {
   added: string[]
   removed: string[]
