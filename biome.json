@@ -62,7 +62,8 @@
         "all": true
       },
       "nursery": {
-        "all": true
+        "all": true,
+        "noReactSpecificProps": "off"
       },
       "performance": {
         "all": true

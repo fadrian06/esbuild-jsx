@@ -5,7 +5,8 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "jsx": "preserve",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "lib": ["es2015", "dom"]
   },
   "include": ["globals.d.ts", "src/**/*"]
 }
