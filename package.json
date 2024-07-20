@@ -15,8 +15,9 @@
   "scripts": {
     "dev": "node scripts/dev.mjs",
     "build": "node scripts/build.mjs",
-    "lint": "eslint ./src/* & stylelint \"src/**/*.css\"",
-    "lint:fix": "eslint ./src/* --fix & stylelint \"src/**/*.css\" --fix",
+    "lint": "biome lint src & eslint ./src/* & stylelint \"src/**/*.css\"",
+    "lint:fix": "biome lint --apply src & eslint ./src/* --fix & stylelint \"src/**/*.css\" --fix",
+    "format": "biome format --write src",
     "add:rome": "npm un -D @biomejs/biome & npm i -D rome"
   },
   "stylelint": {

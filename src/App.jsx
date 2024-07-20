@@ -15,9 +15,7 @@ export default function App() {
       </div>
       <h1>React</h1>
       <div className='card'>
-        <button onClick={incrementCount} type='button'>
-          count is {count}
-        </button>
+        <button onClick={incrementCount} type='button'>count is {count}</button>
         <p>
           Edit <code>src/App.jsx</code> and save to test LiveReload
         </p>
