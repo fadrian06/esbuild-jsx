@@ -10,6 +10,8 @@
     "maxSize": 1048576
   },
   "javascript": {
+    "jsxRuntime": "transparent",
+    "organizeImports": {},
     "globals": [
       "JSX",
       "React",
@@ -31,19 +33,21 @@
       "indentWidth": 2,
       "jsxQuoteStyle": "single",
       "lineEnding": "lf",
-      "lineWidth": 90,
-      "quoteProperties": "asNeeded"
+      "lineWidth": 80,
+      "quoteProperties": "asNeeded",
+      "attributePosition": "auto"
     }
   },
   "formatter": {
-    "lineWidth": 90,
+    "lineWidth": 80,
     "enabled": true,
     "formatWithErrors": true,
     "indentStyle": "space",
     "indentWidth": 2,
     "lineEnding": "lf",
     "ignore": [],
-    "include": []
+    "include": [],
+    "attributePosition": "auto"
   },
   "linter": {
     "rules": {
@@ -67,7 +71,8 @@
         "all": true
       },
       "style": {
-        "all": true
+        "all": true,
+        "noDefaultExport": "off"
       },
       "suspicious": {
         "all": true
@@ -81,7 +86,8 @@
       "indentStyle": "space",
       "indentWidth": 2,
       "lineEnding": "lf",
-      "lineWidth": 90
+      "lineWidth": 80,
+      "trailingCommas": "none"
     },
     "parser": {
       "allowComments": true,
@@ -89,11 +95,30 @@
     }
   },
   "organizeImports": {
-    "enabled": true
+    "enabled": true,
+    "ignore": [],
+    "include": []
   },
   "vcs": {
     "clientKind": "git",
     "enabled": false,
-    "useIgnoreFile": true
-  }
+    "useIgnoreFile": true,
+    "defaultBranch": "",
+    "root": ""
+  },
+  "css": {
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "lineEnding": "lf",
+      "lineWidth": 80,
+      "quoteStyle": "single"
+    },
+    "parser": {
+      "allowWrongLineComments": false
+    }
+  },
+  "extends": [],
+  "overrides": []
 }
