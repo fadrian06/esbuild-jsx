@@ -23,7 +23,7 @@ packageJson.devDependencies = {
 
 packageJson.scripts = {
   ...packageJson.scripts,
-  format: 'rome format --write src',
+  format: 'biome format --write src',
   lint: 'biome lint src & eslint ./src/* & stylelint "src/**/*.css"',
   'lint:fix': [
     'biome lint --apply src',
